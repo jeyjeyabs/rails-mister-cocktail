@@ -11,3 +11,9 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.navbar-button {
+  &:hover {
+    background: rgb(89, 90, 100);
+  }
+}

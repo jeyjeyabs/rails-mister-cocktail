@@ -1,2 +1,7 @@
 // Import page-specific CSS files here.
 @import "home";
+.navbar-button {
+  &:hover {
+    background: rgba(52, 58, 64, 0.5);
+  }
+}

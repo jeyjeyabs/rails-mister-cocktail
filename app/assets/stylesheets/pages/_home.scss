@@ -1,1 +1,10 @@
 // Specific CSS for your home-page
+.navbar-button {
+  &:hover {
+    background: rgb(89, 90, 100);
+  }
+}
+
+.navbar {
+  background-image: url('../../../images/bar.jpg') !important
+}

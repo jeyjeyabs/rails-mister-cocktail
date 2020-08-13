@@ -1,2 +1,11 @@
-<h1>Cocktails#show</h1>
-<p>Find me in app/views/cocktails/show.html.erb</p>
+<h1 class="my-4"><%= @cocktail.name %></h1>
+
+<ul class="list-unstyled list-group mb-3">
+<% @doses.each do |dose| %>
+  <li class="list-group-item"> <%= dose.description%> -- <%= Ingredient.find(dose.ingredient_id).name%></li>
+<% end %>
+</ul>
+
+<%= link_to 'Add a dose with an ingredient', new_cocktail_dose_path(@cocktail), class: "btn btn-primary text-decoration-none" %>
+<%= link_to 'Back to home', cocktails_path, class: "btn btn-secondary text-decoration-none" %>
+
